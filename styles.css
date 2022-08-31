@@ -59,9 +59,10 @@ ul li:nth-child(odd) {
 
 ul li:hover {
     background-color: rgb(200, 200, 200);
+    transition: 0.4s;
 }
 
-.checked {
+ul li.checked {
     background-color: rgb(200, 200, 200);
     text-decoration: line-through;
 }
