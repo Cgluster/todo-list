@@ -1,5 +1,5 @@
-const myList = document.getElementsByTagName('LI');
-for (let i = 0; i < myList; i++) {
+const myList = document.getElementsByTagName('li');
+for (let i = 0; i < myList.length; i++) {
     const span = document.createElement("SPAN");
     const text = document.createTextNode('\u00D7');
     span.className = 'close';
@@ -17,12 +17,12 @@ for (let i = 0; i < close.length; i++) {
 
 const list = document.querySelector('ul');
 list.addEventListener('click', function(e) {
-    if (e.target.tagName === 'LI') {
+    if (e.target.tagName === 'li') {
         e.target.classList.toggle('checked');
     }
 }, false);
 
-const addTask = () => {
+function addTask(){
     const li = document.createElement('li');
     const inputValue = document.getElementById('myInput').value;
     const t = document.createTextNode(inputValue);

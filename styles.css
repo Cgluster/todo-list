@@ -48,19 +48,35 @@ ul li {
     padding: 12px 8px 12px 40px;
     position: relative;
     cursor: pointer;
-    background: rgb(28, 108, 146);
+    background: rgb(66, 174, 135);
     transition: 0.3s;
     border-radius: 0.5rem;
 }
 
 ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #a15895;
 }
 
-ul.li.checked {
-    background: rgb(52, 52, 248);
-    color: rgb(226, 47, 47);
+ul li:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.checked {
+    background-color: rgb(200, 200, 200);
     text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(241, 237, 237);
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
 }
 
 .close {

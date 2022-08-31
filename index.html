@@ -13,8 +13,14 @@
   <body>
     <div class="activity_statement">
       <p>Add activities that must be completed.</p>
-      <input type="text" id="myInput" size="75" maxlength="50" />
-      <span onclick="newElement()" class="addBtn">Add</span>
+      <input
+        type="text"
+        id="myInput"
+        size="75"
+        maxlength="50"
+        placeholder="Please enter a task..."
+      />
+      <span onclick="addTask()" class="addBtn">Add</span>
     </div>
     <hr />
     <div class="todo_list" id="todo_list">
