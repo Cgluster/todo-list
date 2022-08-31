@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>To-Do List</title>
+  </head>
+  <header class="page_title">
+    <h1>To-Do List</h1>
+  </header>
+  <body>
+    <div class="activity_statement">
+      <p>Add activities that must be completed.</p>
+      <input type="text" id="myInput" size="75" maxlength="50" />
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    <hr />
+    <div class="todo_list" id="todo_list">
+      <h2>To do list:</h2>
+    </div>
+    <ul id="myUL">
+      <li>Exercise - 1 hour</li>
+      <li>Code - Until end of day</li>
+      <li class="checked">Clean</li>
+      <li>Prepare meals</li>
+      <li>Search Job Listings</li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
